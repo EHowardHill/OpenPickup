@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        body {
+            margin: 0;
+            animation: both;
+            animation-duration: 1s;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .box {
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            padding: 12px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        .flex-horz {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-vert {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .stretch {
+            width: 100%;
+            height: 100%;
+        }
+
+        .stretch-horz {
+            width: 100%;
+        }
+
+        .stretch-vert {
+            height: 100%;
+        }
+
+        .filler {
+            flex: 1;
+        }
+
+        .button {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            padding: 6px;
+            margin: 6px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            transition: all 100ms ease;
+            font-weight: bold;
+            
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .button:hover {
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+
+        .button:active {
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+
+        .card-size {
+            height: 224px;
+        }
+        
+        .icon {
+            width: 128px;
+            height: 128px;
+        }
+
+        .color-blue {
+            background-color: rgb(red, green, rgb(70, 70, 255));
+            color: white;
+        }
+
+        .title {
+            font-size: large;
+            font-weight: bold;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .description {
+            font-size: small;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-vert stretch box">
+        <div class="flex-horz stretch-horz">
+            <div class="title">
+                MindPalace
+            </div>
+            <div class="no-decor button">
+                Installed
+            </div>
+            <div class="button">
+                Library
+            </div>
+            <div class="filler">
+
+            </div>
+            <div class="button">
+                Profile
+            </div>
+        </div>
+        <hr>
+        <div class="flex-horz flex-wrap stretch box">
+            <div class="button card-size">
+                <center>
+                    <div>
+                        <img class="icon" src="https://download.onlyoffice.com/assets/fb/fb_icon_325x325.jpg">
+                    </div>
+                    <hr>
+                    <div class="title">
+                        OnlyOffice
+                    </div>
+                    <div class="description">
+                        Office Application
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
